@@ -1,4 +1,4 @@
-package com.kali.jpa.interfacebased.closed;
+package com.kali.jpa.projection.interfacebased.closed;
 
 public interface ProductClosedView {
 

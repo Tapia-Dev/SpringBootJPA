@@ -1,6 +1,7 @@
 package com.kali.jpa.controller;
 
 import com.kali.jpa.Entity.Local;
+import com.kali.jpa.projection.interfacebased.open.LocalOpenView;
 import com.kali.jpa.service.LocalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,5 +22,13 @@ public class LocalController {
     @GetMapping("/findAll")
     public List<Local>findAll(){
         return localService.findAll();
+    }
+
+
+
+    // Open View
+    @GetMapping("/findAllOpenView")
+    public List<LocalOpenView>findBy(){
+        return localService.findBy();
     }
 }

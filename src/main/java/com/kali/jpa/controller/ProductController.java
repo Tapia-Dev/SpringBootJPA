@@ -1,10 +1,8 @@
 package com.kali.jpa.controller;
 
 
-import com.kali.jpa.Entity.Local;
 import com.kali.jpa.Entity.Product;
-import com.kali.jpa.interfacebased.closed.ProductClosedView;
-import com.kali.jpa.service.LocalService;
+import com.kali.jpa.projection.interfacebased.closed.ProductClosedView;
 import com.kali.jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
